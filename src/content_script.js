@@ -7,11 +7,6 @@ function walk(node)
 	
 	var child, next;
 	
-	if (node.tagName.toLowerCase() == 'input' || node.tagName.toLowerCase() == 'textarea'
-	    || node.classList.indexOf('ace_editor') > -1) {
-		return;
-	}
-
 	switch ( node.nodeType )  
 	{
 		case 1:  // Element
@@ -36,10 +31,10 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	v = v.replace(/\bThe cloud\b/g, "My butt");
-	v = v.replace(/\bthe Cloud\b/g, "my Butt");
-	v = v.replace(/\bthe cloud\b/g, "my butt");
+	v = v.replace(/\bcommit\b/g, "poop");
+	v = v.replace(/\bcommits\b/g, "poops");
+	v = v.replace(/\bcommitted\b/g, "pooped");
+	v = v.replace(/\bcommitting\b/g, "pooping");
 	
 	textNode.nodeValue = v;
 }

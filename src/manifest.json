@@ -1,8 +1,11 @@
 {
 	"manifest_version": 2,
-	"name": "Cloud To Butt",
+	"name": "Commits are poops",
 	"version": "1.0",
-	"description": "Replaces the text 'the cloud' with 'my butt'.",
+	"description": "Replaces 'commits' with 'poops'.",
+	"icons": {
+		"48": "logo.png"
+	},
 	"content_scripts": 
 	[
 		{
